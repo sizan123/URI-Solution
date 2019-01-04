@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+         int x ,y ;
+         int max,min;
+         int sum = 0 ;
+         x= in.nextInt();
+         y= in.nextInt();
+         if (x>y) {
+            max = x ;
+            min = y ;
+        }
+         else if (x<y) {
+            max = y ;
+            min = x ;
+            
+        }
+         else{
+             max = x ;
+             min = y ;
+         }
+         for (int i = min; i <= max; i++) {
+             if (i % 13 != 0 ) {
+                 
+                 sum = sum+i ;
+             }
+        }
+        System.out.println(sum);
+        
+    }
+    
+}
