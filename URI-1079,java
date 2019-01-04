@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        int n;
+
+        float val1, val2, val3;
+        float avg;
+
+        n = in.nextInt();
+
+        for (int l = 0; l < n; l++) {
+            val1 = in.nextFloat();
+            val2 = in.nextFloat();
+            val3 = in.nextFloat();
+            avg = (val1 * 2 + val2 * 3 + val3 * 5) / 10;
+            System.out.printf("%.1f\n", avg);
+
+        }
+
+    }
+
+}
